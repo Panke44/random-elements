@@ -1,0 +1,97 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-holder{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 12px;
+    background-color: #F9F9F9;
+    font-size: 14px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover{
+    color: inherit;
+}
+
+.card::before{
+    position: absolute;
+    content: "Read more";
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50%;
+    opacity: 0;
+}
+
+.card:hover::before{
+    background-color: rgba(0, 0, 0, 0.8);
+    display:block;
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+.card-holder .card{
+    width: 250px;
+    height: 350px;
+    transition: 0.3s ease;
+    padding: 0px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card h4{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.card p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.footer{
+    height: 50px;
+    background-color: #F9F9F9;
+    margin-top: 250px;
+    padding: 0px 100px;
+}
+
+.footer .rights{
+    text-align: right;
+}
+
+.footer .footer-items{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-items a{
+    margin: 0px 40px;
+}
