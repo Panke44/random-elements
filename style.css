@@ -2,6 +2,55 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+.top-panel{
+    background-color: #F6914A;
+    font-weight: 600;
+    color: white;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-panel p{
+    margin: 0px;
+}
+
+.hero .col-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text{
+    width: 70%;
+}
+
+.hero-text p{
+    margin: 0px;
+}
+
+.hero-text h1{
+    margin: 0px;
+    font-weight: bold;
+}
+
+.hero .col-6 p, h2{
+    display: block;
+}
+
+.hero button{
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.hero .col-6 img{
+    width: 50%;
+}
+
 .card-holder{
     height: 500px;
     display: flex;
@@ -75,7 +124,6 @@ a{
 
 .footer{
     height: 300px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +138,8 @@ a{
 }
 
 .footer-card img{
-    width: 75%;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .footer-card h3{
@@ -123,11 +172,12 @@ a{
     height: 50px;
     text-align: center;
     padding-top: 12px;
+    
 }
 
 .footer-items a{
     color: black;
     transition: 0.3s ease;
     margin: 0px 40px;
-
+    height: 100%;
 }
