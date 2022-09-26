@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,10 +22,61 @@ body{
     margin: 0px;
 }
 
-.navbar{
-    height: 75px;
-    /* border: 1px solid red; */
+.logo{
+    margin-left: 100px;
+    width: 250px;
+}
+
+.navbar-desktop{
+    position: sticky;
+    padding: 20px;
+    height: 100px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navbar-desktop ul li{
+    display: inline-block;
+    margin: auto;
+    margin: 0px 25px;
+}
+
+.navbar-desktop ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-item {
+    color: #000;
+    text-decoration: none;
+    /* margin: 10px 25px; */
+    transition: 0.3s ease;
+}
+
+.nav-item:hover{
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    /* margin: 0px 25px */
+}
+
+.nav-item:hover::after {
+    width: 60%;
+    transition: width .3s;
 }
 
 .hero .col-6{
@@ -107,10 +163,10 @@ a{
 }
 
 .card:hover::before{
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(0, 0, 0, 0.7);
     /* background-color: rgba(74, 175, 246, 0.8); */
     /* background-color: rgba(246, 145, 74, 0.9); */
-    background-color: rgba(246,145,74,0.9);
+    /* background-color: rgba(246,145,74,0.9); */
     display:block;
     transition: 0.3s ease;
     opacity: 1;
