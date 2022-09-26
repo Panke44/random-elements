@@ -2,8 +2,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .top-panel{
     background-color: #F6914A;
     font-weight: 600;
@@ -19,6 +17,12 @@ body{
     margin: 0px;
 }
 
+.navbar{
+    height: 75px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 .hero .col-6{
     display: flex;
     align-items: center;
@@ -26,7 +30,8 @@ body{
 }
 
 .hero-text{
-    width: 70%;
+    width: 60%;
+    margin-left: 300px;
 }
 
 .hero-text p{
@@ -46,21 +51,25 @@ body{
     margin-top: 20px;
     border-radius: 25px;
     padding: 10px 30px;
-    background-color: #FD7D23;
-    border: 1px solid #FD7D23;
+    background-color: #4AAFF6;
+    border: 1px solid #4AAFF6;
     color: white;
     font-weight: 600;
+    
+    box-shadow: rgba(74, 175, 246, 0.12) 0px 2px 4px 0px, rgba(74, 175, 246, 0.32) 0px 2px 16px 0px;
 }
 
 .hero button:hover{
-    color: #FD7D23;
+    color: #4AAFF6;
     background-color: white;
-    border: 1px solid #FD7D23;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 1px solid #4AAFF6;
+    /* box-shadow: rgba(74, 175, 246, 0.56) 0px 22px 70px 4px; */
+    box-shadow: rgba(74, 175, 246, 0.12) 0px 2px 4px 0px, rgba(74, 175, 246, 0.32) 0px 2px 16px 0px;
 }
 
 .hero .col-6 img{
-    width: 50%;
+    width: 60%;
+    margin-left: -300px;
 }
 
 .card-holder{
@@ -98,7 +107,10 @@ a{
 }
 
 .card:hover::before{
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* background-color: rgba(74, 175, 246, 0.8); */
+    /* background-color: rgba(246, 145, 74, 0.9); */
+    background-color: rgba(246,145,74,0.9);
     display:block;
     transition: 0.3s ease;
     opacity: 1;
@@ -143,7 +155,7 @@ a{
 
 .footer-card{
     /* border: 1px solid red; */
-    height: 230px;
+    height: 200px;
     width: 400px;
     margin: 30px;
     padding-left: 50px;
@@ -192,4 +204,8 @@ a{
     transition: 0.3s ease;
     margin: 0px 40px;
     height: 100%;
+}
+
+.footer-items a:hover{
+    color: #a9a9a9;
 }
